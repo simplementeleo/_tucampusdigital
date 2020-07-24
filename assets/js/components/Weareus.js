@@ -1,4 +1,4 @@
-Vue.component('Weareus',{
+Vue.component('Weareus', {
     template: //html
     `
     <section class="business work-with-us">
@@ -25,4 +25,4 @@ Vue.component('Weareus',{
             ]
         }
     }
-})
+});
