@@ -10,7 +10,7 @@ Vue.component('Motivation', {
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <!-- <h1 class="text-center">video</h1> -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TgZUHw7kGX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/TgZUHw7kGX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

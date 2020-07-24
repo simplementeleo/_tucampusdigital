@@ -1,4 +1,4 @@
-Vue.component('Workwithus',{
+Vue.component('Weareus',{
     template: //html
     `
     <section class="business work-with-us">
