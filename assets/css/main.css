@@ -2,6 +2,10 @@ input::placeholder {
   color: #9e9a9ac4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background: url("../img/main.jpg") no-repeat;
   background-size: cover;
@@ -37,6 +41,10 @@ section p {
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 10px #00000026;
+  transition: all ease-in-out 0.3s;
+}
+.swiper-container .swiper-slide .video:hover {
+  transform: translateY(-5px);
 }
 .swiper-container .swiper-slide .video .play {
   position: relative;
@@ -45,10 +53,13 @@ section p {
   background: #333333a2;
   width: 80px;
   height: 80px;
-  box-shadow: 1px 1px 10px #00000026;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.swiper-container .swiper-slide .video .play:hover {
+  box-shadow: 1px 1px 15px #00000071;
 }
 .swiper-container .swiper-slide .video .play span {
   position: absolute;
@@ -93,6 +104,13 @@ section.banner {
   background-position: center;
 }
 
+section.main-categories .card {
+  transition: all ease-in-out 0.3s;
+}
+section.main-categories .card:hover {
+  box-shadow: 1px 1px 15px #00000026;
+  transform: translateY(-5px);
+}
 section.main-categories .card .img {
   background: #eee;
   width: 100%;
@@ -101,13 +119,16 @@ section.main-categories .card .img {
 section.main-categories .card .img img {
   border-radius: 5px 5px 0 0;
 }
+section.main-categories .card a:hover {
+  text-decoration: none;
+}
 
 section.instructor {
   position: relative;
 }
 section.instructor img {
   width: 90%;
-  box-shadow: 1px 1px 15px #f2f2f2;
+  box-shadow: 1px 1px 15px #e8e6e6;
 }
 section.instructor .background {
   position: absolute;

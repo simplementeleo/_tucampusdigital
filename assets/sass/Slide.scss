@@ -12,6 +12,10 @@
             justify-content: center;
             align-items: center;
             box-shadow: 1px 1px 10px #00000026;
+            transition: all ease-in-out .3s;
+            &:hover {
+                transform: translateY(-5px);
+            }
 
             .play {
                 position: relative;
@@ -20,10 +24,14 @@
                 background: #333333a2;
                 width: 80px;
                 height: 80px;
-                box-shadow: 1px 1px 10px #00000026;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transition: all ease-in-out .3s;
+
+                &:hover {
+                    box-shadow: 1px 1px 15px #00000071;
+                }
 
                 span {
                     position: absolute;

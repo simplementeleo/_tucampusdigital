@@ -1,7 +1,7 @@
 Vue.component('Instructor', {
     template: //html
         `
-    <section class="instructor d-flex align-items-center">
+    <section id="instructor" class="instructor d-flex align-items-center">
         <div class="background"></div>
         <div class="container">
             <div class="row align-items-center">

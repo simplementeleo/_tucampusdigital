@@ -2,4 +2,8 @@ input::placeholder {
   color: #9e9a9ac4;
 }
 
-/*# sourceMappingURL=utilities.css.map */
+html {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=Utilities.css.map */

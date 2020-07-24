@@ -1,3 +1,10 @@
+section.main-categories .card {
+  transition: all ease-in-out 0.3s;
+}
+section.main-categories .card:hover {
+  box-shadow: 1px 1px 15px #00000026;
+  transform: translateY(-5px);
+}
 section.main-categories .card .img {
   background: #eee;
   width: 100%;
@@ -5,6 +12,9 @@ section.main-categories .card .img {
 }
 section.main-categories .card .img img {
   border-radius: 5px 5px 0 0;
+}
+section.main-categories .card a:hover {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=Principal.css.map */
