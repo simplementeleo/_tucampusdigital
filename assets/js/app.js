@@ -40,6 +40,8 @@ $('#tabs a').on('click', function (e) {
     $(this).tab('show')
 });
 
+
+// Configuration slide
 var swiper = new Swiper('.swiper-container', {
     breakpoints: {
         1080: {

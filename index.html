@@ -6,207 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Tucampusdigital </title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-
-
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="./assets/js/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-
     <script src="./assets/js/components/Headers.js"></script>
     <script src="./assets/js/components/Widgets.js"></script>
     <script src="./assets/js/components/Categories.js"></script>
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="./assets/js/components/Watchingstudents.js"></script>
+    <script src="./assets/js/components/Banner.js"></script>
+    <script src="./assets/js/components/Maincategories.js"></script>
+    <script src="./assets/js/components/Workwithus.js"></script>
+    <script src="./assets/js/components/Motivation.js"></script>
+    <script src="./assets/js/components/Footering.js"></script>
 </head>
 
 <body>
 
     <div id="app">
-
-
         <Headers></Headers>
         <Widgets :widgets="widget1"></Widgets>
-        <!-- Categories videos component -->
         <Categories></Categories>
         <Widgets :widgets="widget2" :top="true"></Widgets>
-
-
-        <!-- Students watching component -->
-        <section class="students-watching">
-            <div class="container">
-                <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div v-for="i in 10" class="swiper-slide">
-                            <div class="video m-2">
-                                <div class="play">
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="p-2 text-white">
-                                <h5>Lorem ipsum dolor sit amet.</h5>
-                                <p class="my-2">Name Surname</p>
-
-                                <div class="d-flex">
-                                    <h5 class="pr-3">11,99$</h5>
-                                    <span class="text-light before">14,99$</span>
-                                </div>
-                                <div class="alert alert-warning">
-                                    Lo más vendido
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Banner -->
-        <section class="banner my-5">
-
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-sm-12 p-5 text-center text-white">
-                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <button class="btn mt-4 btn-outline-light">
-                            Lorem, ipsum.
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- Main categories -->
-        <section class="main-categories mb-5">
-
-            <div class="container">
-                <h4>Lorem, ipsum dolor.</h4>
-                <div class="row">
-                    <div v-for="i in 8" class="col-md-3 col-sm-12">
-                        <div class="card mt-4">
-                            <div class="img">
-                                <!-- <img src="..." alt="..."> -->
-                            </div>
-                            <p class="p-3">Category {{ i++ }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- Instructor -->
-        <section class="instructor d-flex align-items-center">
-
-            <div class="background"></div>
-
-            <div class="container">
-
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-                        <img src="./assets/img/instructor.jpg" alt="Instructor">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card p-4">
-                            <h3>Lorem ipsum dolor sit.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet dignissimos quam.
-                                Laudantium quaerat necessitatibus, id commodi voluptates odit ratione saepe inventore
-                                aut a molestias aspernatur distinctio sed atque explicabo!</p>
-                            <button class="mt-4 btn btn-primary">
-                                Lorem ipsum dolor sit.
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Work whit us -->
-        <section class="business work-with-us">
-            <hr class="my-5">
-            <div class="container">
-                <h3 class="text-center">Trabajan con nosotros</h3>
-                <div class="row justify-content-center mt-4">
-                    <div v-for="i in 4" class="col-md-3 col-sm-12">
-                        <h4 class="p-2 text-center">Empresa {{ i++ }}</h4>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-5">
-        </section>
-
-
-        <!-- Motivation -->
-        <section class="motivation-video">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-md-6 col-sm-12">
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo delectus totam
-                            perspiciatis facere. Similique sunt dolor doloribus labore ducimus!</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <h1 class="text-center">video</h1>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </section>
-
-
-        <!-- Footer -->
-        <footer class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12 d-flex flex-column">
-                        <a v-for="l in 5" href="#">Footer {{ l++ }}</a>
-                    </div>
-                    <div class="col-md-3 col-sm-12 d-flex flex-column">
-                        <a v-for="l in 4" href="#">Footer {{ l++ }}</a>
-                    </div>
-                    <div class="col-md-3 col-sm-12 d-flex flex-column">
-                        <a v-for="l in 4" href="#">Footer {{ l++ }}</a>
-                    </div>
-                    <div class="col-md-3 col-sm-12 d-flex flex-column">
-                        <select class="custom-select">
-                            <option selected>Lang</option>
-                            <option value="1">Spanish</option>
-                            <option value="2">English</option>
-                            <option value="3">Italian</option>
-                        </select>
-                    </div>
-                    <div class="mt-4 col-sm-12">
-                        <p class="text-center">&copy; Tucampusdigital</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-
-
-
+        <WatchingStudents></WatchingStudents>
+        <Banner></Banner>
+        <MainCategories></MainCategories>
+        <Instructor></Instructor>
+        <WorkWithUs></WorkWithUs>
+        <Motivation></Motivation>
+        <Footering></Footering>
     </div>
-
-
     <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -219,8 +52,6 @@
     </script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
-
-
 </body>
 
 </html>
