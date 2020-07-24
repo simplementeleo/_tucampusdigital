@@ -1,0 +1,14 @@
+section.categories-video {
+
+    background: white;
+
+    .nav-tabs {
+        .nav-item .active {
+            border: none;
+            border-bottom: 1.5px solid #000000;
+            transition: all ease-in-out .1s;
+            font-weight: bold;
+        }
+    }
+
+}

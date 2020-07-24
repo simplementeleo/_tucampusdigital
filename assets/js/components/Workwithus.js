@@ -1,4 +1,4 @@
-Vue.component('WorkWithUs',{
+Vue.component('Workwithus',{
     template: //html
     `
     <section class="business work-with-us">
@@ -6,8 +6,8 @@ Vue.component('WorkWithUs',{
         <div class="container">
             <h3 class="text-center"> {{ title }} </h3>
             <div class="row justify-content-center mt-4">
-                <div v-for="(index, b) in business" class="col-md-3 col-sm-12">
-                    <h4 class="p-2 text-center"> {{ b.name }} {{ index++ }} </h4>
+                <div v-for="(b, index) in business" class="col-md-3 col-sm-12">
+                    <h4 class="p-2 text-center"> {{ b.name }} {{ index+1 }} </h4>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@ Vue.component('WorkWithUs',{
     `,
     data(){
         return {
-            title: 'Trabajan con nosotros',
+            title: 'Work with us',
             business: [
                 { url: '#', name: 'Business' },
                 { url: '#', name: 'Business' },

@@ -4,8 +4,10 @@ Vue.component('Footering', {
     <footer class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-12 d-flex flex-column">
-                    <a href="#" target="_blank">{{ l++ }}</a>
+                <div v-for="(i, j) in 3" class="col-md-3 col-sm-12 d-flex flex-column">
+                    <div v-for="(foo, index) in footer[j]">
+                        <a :href="foo.url"  target="_blank"> {{ foo.name }} </a>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 d-flex flex-column">
                     <select class="custom-select">
@@ -25,23 +27,23 @@ Vue.component('Footering', {
             title: 'Tucampusdigital',
             footer: [
                 [
-                    { url: '#', nameLink: 'Link'  },
-                    { url: '#', nameLink: 'Link'  },
-                    { url: '#', nameLink: 'Link'  },
-                    { url: '#', nameLink: 'Link'  },
-                    { url: '#', nameLink: 'Link'  },
+                    { url: '#', name: 'Link'  },
+                    { url: '#', name: 'Link'  },
+                    { url: '#', name: 'Link'  },
+                    { url: '#', name: 'Link'  },
+                    { url: '#', name: 'Link'  },
                 ],
                 [
-                    { url: '#', nameLink: 'Link'  },
-                    { url: '#', nameLink: 'Link'  },
-                    { url: '#', nameLink: 'Link'  },
-                    { url: '#', nameLink: 'Link'  },
+                    { url: '#', name: 'Link'  },
+                    { url: '#', name: 'Link'  },
+                    { url: '#', name: 'Link'  },
+                    { url: '#', name: 'Link'  },
                 ],
                 [
-                    { url: '#', nameLink: 'Facebook'  },
-                    { url: '#', nameLink: 'Instagram'  },
-                    { url: '#', nameLink: 'Twitter'  },
-                    { url: '#', nameLink: 'Linkedin'  },
+                    { url: '#', name: 'Facebook'  },
+                    { url: '#', name: 'Instagram'  },
+                    { url: '#', name: 'Twitter'  },
+                    { url: '#', name: 'Linkedin'  },
                 ],
             ],
             options: [

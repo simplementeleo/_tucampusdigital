@@ -1,4 +1,4 @@
-Vue.component('WatchingStudents', {
+Vue.component('Students', {
     template: //html
     `
     <section class="students-watching">
@@ -12,13 +12,13 @@ Vue.component('WatchingStudents', {
                                 <span></span>
                             </div>
                         </div>
-                        <div class="p-2 text-white">
+                        <div class="content p-2 text-white">
                             <h5>Lorem ipsum dolor sit amet.</h5>
                             <p class="my-2">Name Surname</p>
 
                             <div class="d-flex">
                                 <h5 class="pr-3">11,99$</h5>
-                                <span class="text-light before">14,99$</span>
+                                <span class="before">14,99$</span>
                             </div>
                             <div class="alert alert-warning">
                                 Lo más vendido
