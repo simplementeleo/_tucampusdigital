@@ -1,0 +1,119 @@
+input::placeholder {
+  color: #9e9a9ac4;
+}
+
+header {
+  background: url("../img/main.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+header nav input.form-control {
+  max-width: 500px;
+}
+header article .container .card {
+  max-width: 500px !important;
+}
+
+section .icon {
+  padding: 20px;
+  background: #839aea38;
+  border-radius: 50%;
+}
+section p {
+  margin-bottom: 0;
+}
+
+section.categories-video {
+  background: white;
+}
+section.categories-video .nav-tabs .nav-item .active {
+  border: none;
+  border-bottom: 1.5px solid #000000;
+  transition: all ease-in-out 0.1s;
+  font-weight: bold;
+}
+
+.swiper-container {
+  background: #333;
+}
+.swiper-container .swiper-slide {
+  width: 400px;
+}
+.swiper-container .swiper-slide .video {
+  width: 100%;
+  height: 150px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container .swiper-slide .video .play {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #333333a2;
+  width: 80px;
+  height: 80px;
+  box-shadow: 1px 1px 10px #00000026;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container .swiper-slide .video .play span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotateZ(90deg) translateY(-3px);
+  box-shadow: 1px 1px 10px red;
+}
+.swiper-container .swiper-slide .before {
+  text-decoration: line-through;
+}
+.swiper-container .swiper-slide .alert {
+  padding: 5px !important;
+  background: #fbc92a;
+  border: none;
+  color: #881e31;
+  font-weight: bold;
+}
+
+section.banner {
+  background: url("../img/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.main-categories .card .img {
+  background: #eee;
+  width: 100%;
+  height: 300px;
+}
+section.main-categories .card .img img {
+  border-radius: 5px 5px 0 0;
+}
+
+section.instructor {
+  position: relative;
+}
+section.instructor img {
+  width: 90%;
+  box-shadow: 1px 1px 15px #f2f2f2;
+}
+section.instructor .background {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: #f2f2f2;
+}
+section.instructor .card {
+  border: none;
+  background: #f2f2f2;
+}
+
+section.business h4 {
+  color: #efefef;
+}
+
+/*# sourceMappingURL=main.css.map */

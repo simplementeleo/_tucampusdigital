@@ -1,0 +1,29 @@
+header {
+    background: url('../img/main.jpg') no-repeat;
+    background-size: cover; 
+    background-position: top center;
+
+    nav {
+        input.form-control {
+            max-width: 500px;
+        }
+    }
+
+    article {
+        .container {
+            .card {
+                max-width: 500px !important;
+            }
+        }
+    }
+}
+section {
+    .icon {
+        padding: 20px;
+        background: #839aea38;
+        border-radius: 50%;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}
