@@ -28,17 +28,10 @@ const app = new Vue({
             }
         ]
     },
+   
 
 });
 
-
-
-
-// Tabs 
-$('#tabs a').on('click', function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-});
 
 
 // Configuration slide
@@ -72,31 +65,29 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-var swiper = new Swiper('.swiper-container .one', {
+var swiper = new Swiper('.swiper-categories', {
     breakpoints: {
         1080: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            slidesPerView: 4
+            slidesPerView: 'auto',
+            spaceBetween: 0,
         },
         770: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            slidesPerView: 3,
+            slidesPerView: 'auto',
+            spaceBetween: 0,
         },
         600: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            slidesPerView: 2,
+            slidesPerView: 'auto',
+            spaceBetween: 0,
         }
 
     },
-    // width: 1700, 
-    loop: true,
+    loop: false,
     loopFillGroupWithBlank: true,
     pagination: false,
     navigation: {
-        nextEl: '.swiper-button-next .one',
-        prevEl: '.swiper-button-prev .one',
+        nextEl: '.next-categories ',
+        prevEl: '.prev-categories',
     },
 });
+
+AOS.init();

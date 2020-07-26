@@ -2,50 +2,96 @@ Vue.component('Categories', {
     template: //html
         `
         <section class="categories-video mb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                    <p class="my-4"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate illo maxime
-                        fugit
-                        consequuntur distinctio in?</p>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <h4> {{ title }} </h4>
+                        <p class="my-4"> {{ text }} </p>
+                    </div>
                 </div>
-            </div>
-            <ul class="nav nav-tabs" id="tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                        aria-controls="home" aria-selected="true">Home</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div v-for="i in 10" class="swiper-slide">
-                                <div class="video m-2">
-                                    <div class="play">
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="content p-2">
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                    <p class="my-2">Name Surname</p>
-                                    <div class="d-flex">
-                                        <h5 class="pr-3 price">11,99$</h5>
-                                        <span class="before">14,99$</span>
-                                    </div>
-                                    <div class="alert alert-warning">
-                                        Lo más vendido
+
+                <div class="d-flex">
+                    <div v-for="(name, tab) in categories[0]" @click="tabActive(tab)"  :class="['p-0', { 'isActive': tab === isActive }]">
+                        <p class="tab-title text-center p-3"> {{ name.name }} </p>
+                    </div>
+                </div>
+
+                <div class="content">
+
+                    <div v-for="(content, tab) in categories[1]" v-if="tab === isActive">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div v-for="video in content[tab]" class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="video m-2">
+                                            <div class="play">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="content p-2 text-white">
+                                        <h5> {{ video }} {{ tab }}</h5>
+                                        <p class="my-2"> {{  }} </p>
+            
+                                        <div class="d-flex">
+                                            <h5 class="pr-3"> {{  }} $</h5>
+                                            <span class="before"> {{  }} $</span>
+                                        </div>
+                                        <div v-if="mostSold" class="alert alert-warning">
+                                            Lo más vendido
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
+                
                 </div>
+            
+
+
+
+
+
+
             </div>
-        </div>
-    </section>
-    `
+        </section>
+    `,
+    data(){
+        return {
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate illo maxime fugit consequuntur distinctio in?',
+            isActive: 0,
+            categories: [
+                [
+                    { name: 'Marketing' },
+                    { name: 'Web Development' },
+                    { name: 'Design' },
+                    { name: 'DevOPS' }
+                ],
+                [
+                    [
+                        { url: '#' },
+                        { title: 'Title Video' },
+                        { instructor: 'Title Video' },
+                        { offer: 'Title Video' },
+                        { beforePrice: 'Title Video' },
+                        { mostSold: false }
+
+                    ]
+                        
+                    
+                ]
+            ]
+        }
+    },
+    methods: {
+        tabActive(tab){
+            this.isActive = tab
+            console.log(tab)
+        }
+    }
 })

@@ -91,11 +91,12 @@ section p {
 section.categories-video {
   background: white;
 }
-section.categories-video .nav-tabs .nav-item .active {
-  border: none;
-  border-bottom: 1.5px solid #000000;
-  transition: all ease-in-out 0.1s;
-  font-weight: bold;
+section.categories-video .isActive {
+  border-bottom: 1px solid #000;
+}
+section.categories-video .tab-title {
+  cursor: pointer;
+  border-bottom: 1px solid #000;
 }
 
 section.banner {
