@@ -64,30 +64,4 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-
-var swiper = new Swiper('.swiper-categories', {
-    breakpoints: {
-        1080: {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-        },
-        770: {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-        },
-        600: {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-        }
-
-    },
-    loop: false,
-    loopFillGroupWithBlank: true,
-    pagination: false,
-    navigation: {
-        nextEl: '.next-categories ',
-        prevEl: '.prev-categories',
-    },
-});
-
 AOS.init();
