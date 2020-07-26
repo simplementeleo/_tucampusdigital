@@ -5,8 +5,8 @@ Vue.component('Footering', {
         <div class="container">
             <div class="row">
                 <div v-for="(i, j) in 3" class="col-md-3 col-sm-12 d-flex flex-column">
-                    <div v-for="(foo, index) in footer[j]">
-                        <a :href="foo.url"  target="_blank"> {{ foo.name }} </a>
+                    <div v-for="(foo, index) in footer[j]" class="my-2">
+                        <a :href="foo.url" target="_blank"> {{ foo.name }} </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12 d-flex flex-column">
