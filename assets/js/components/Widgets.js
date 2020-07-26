@@ -5,8 +5,8 @@ Vue.component('Widgets', {
         <hr :class="{ 'd-none': !top }">
         <section class="container">
             <div class="row">
-                <div v-for="w in widgets" class="col-md-4">
-                    <div class="widget d-flex align-items-center justify-content-center mt-5">
+                <div v-for="(w, i) in widgets" class="col-md-4">
+                    <div data-aos="slide-right" class="widget d-flex align-items-center justify-content-center mt-5">
                         <div class="icon mr-3">
                             <!-- icon -->
                         </div>

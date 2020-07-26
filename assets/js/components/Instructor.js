@@ -5,14 +5,14 @@ Vue.component('Instructor', {
         <div class="background"></div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                <div data-aos="zoom-in" class="col-md-6 col-sm-12 d-flex justify-content-center">
                     <img src="./assets/img/instructor.jpg" alt="Instructor">
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="card p-4">
-                        <h3> {{ title }} </h3>
-                        <p> {{ text }} </p>
-                        <button href="#" class="mt-4 btn btn-primary">
+                        <h3 data-aos="fade-up-right"> {{ title }} </h3>
+                        <p data-aos="fade-up-right" data-aos-delay="200"> {{ text }} </p>
+                        <button data-aos="fade-up-right" data-aos-delay="400" href="#" class="mt-4 btn btn-primary">
                             {{ button }}
                         </button>
                     </div>

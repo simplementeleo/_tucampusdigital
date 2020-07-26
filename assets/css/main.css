@@ -76,6 +76,9 @@ section p {
 .swiper-container .swiper-slide .content h5 {
   color: #000000;
 }
+.swiper-container .swiper-slide .content p {
+  color: #918e8e;
+}
 .swiper-container .swiper-slide .content .before {
   text-decoration: line-through;
   color: #c5c3c3;
@@ -90,13 +93,6 @@ section p {
 
 section.categories-video {
   background: white;
-}
-section.categories-video .isActive {
-  border-bottom: 1px solid #000;
-}
-section.categories-video .tab-title {
-  cursor: pointer;
-  border-bottom: 1px solid #000;
 }
 
 section.banner {
@@ -119,6 +115,7 @@ section.main-categories .card .img {
 }
 section.main-categories .card .img img {
   border-radius: 5px 5px 0 0;
+  width: 100%;
 }
 section.main-categories .card a:hover {
   text-decoration: none;

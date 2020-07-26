@@ -47,6 +47,9 @@
 .swiper-container .swiper-slide .content h5 {
   color: #000000;
 }
+.swiper-container .swiper-slide .content p {
+  color: #918e8e;
+}
 .swiper-container .swiper-slide .content .before {
   text-decoration: line-through;
   color: #c5c3c3;

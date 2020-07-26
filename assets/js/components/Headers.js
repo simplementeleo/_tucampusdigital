@@ -17,7 +17,7 @@ Vue.component('Headers', {
                 </ul>
                 <form class="my-2 my-lg-0 mr-lg-4">
                     <input class="form-control mr-sm-2 rounded-pill px-4" type="search"
-                        placeholder="Busca cualquier cosa" aria-label="Search">
+                        placeholder="Busca cualquier cosa" aria-label="Search" v-model="search1">
                 </form>
                 <button v-for="(button, index) in buttons" :href="button.url" :class="['btn', {'btn-outline-primary': index == 0, 'mr-2': index == 0, 'btn-primary': index == 1 }]">
                    {{ button.name }}
@@ -29,7 +29,7 @@ Vue.component('Headers', {
                 <div class="card p-5">
                     <h2>{{ titleCard }}</h2>
                     <p class="mt-3">{{ textCard }}</p>
-                    <input class="form-control mt-3" type="search" placeholder="¿Qué quieres aprender?">
+                    <input class="form-control mt-3" type="search" placeholder="¿Qué quieres aprender?" v-model="search2">
                 </div>
             </div>
         </article>
@@ -37,6 +37,8 @@ Vue.component('Headers', {
     `,
     data(){
         return {
+            search1: '',
+            search2: '',
             titleCard: 'Lorem, ipsum dolor.',
             textCard: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam accusamus suscipit ullam, repellendus architecto reiciendis inventore aut velit. Praesentium accusantium voluptate provident iure, dolores maxime. Iusto eos porro repellendus sint!',
             nav: [
