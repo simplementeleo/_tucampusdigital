@@ -2,33 +2,39 @@ const app = new Vue({
     el: '#app',
     data: {
         widget1: [{
+                icon: 'online-learning',
                 title: 'Lorem ipsum dolor.',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             },
             {
+                icon: 'sketch',
                 title: 'Lorem ipsum dolor.',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             },
             {
+                icon: 'team',
                 title: 'Lorem ipsum dolor.',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             }
         ],
         widget2: [{
+                icon: 'idea',
                 title: 'Lorem ipsum dolor.',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             },
             {
+                icon: 'fast-time',
                 title: 'Lorem ipsum dolor.',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             },
             {
+                icon: 'certificate',
                 title: 'Lorem ipsum dolor.',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             }
         ]
     },
-   
+
 
 });
 

@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.widget img {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100);
+}
+
 header {
   background: url("../img/main.jpg") no-repeat;
   background-size: cover;

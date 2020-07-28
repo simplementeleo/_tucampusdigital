@@ -9,6 +9,7 @@ Vue.component('Widgets', {
                     <div data-aos="slide-right" class="widget d-flex align-items-center justify-content-center mt-5">
                         <div class="icon mr-3">
                             <!-- icon -->
+                            <img :src="'./assets/img/icons/'+ w.icon +'.svg'" /> 
                         </div>
                         <div class="text">
                             <h5>{{ w.title }}</h5>
